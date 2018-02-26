@@ -16,9 +16,19 @@ public class Geometric extends Progression {
 	}
 
 	@Override
+	public double getTerm(int n) throws IndexOutOfBoundsException { 
+		if (n <= 0) 
+			throw new IndexOutOfBoundsException("printAllTerms: Invalid argument value = " + n); 
+
+		double value = firstValue(); 
+		for (int i=1; i<n; i++) 
+			value = nextValue(); 
+		return value; 
+	}
+	
+	@Override
 	public String toString() {
-		
-		return "Geom(" + getFirstValue() + ", " + (int) commonFactor + ")";	
+		return "Geom(" + (int) firstValue() + ", " + (int) commonFactor + ")";	
 	}
 	
 	

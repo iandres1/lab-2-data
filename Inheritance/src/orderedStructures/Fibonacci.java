@@ -14,8 +14,7 @@ public class Fibonacci extends Progression {
 
 	@Override
 	public double nextValue() {
-        // add the necessary code here
-		
+		current = current + prev;
 		
 		return current;
 	}
@@ -28,7 +27,6 @@ public class Fibonacci extends Progression {
 	}
 	@Override
 	public String toString() {
-		return "Geom(" + getFirstValue() + ", " + (int) prev + ")";	
+		return "Fibo(" + (int) firstValue() + ", " + (int) prev + ")";	
 	}
-
 }

@@ -1,6 +1,7 @@
 package TesterClasses;
 
 import orderedStructures.Arithmetic;
+import orderedStructures.Fibonacci;
 import orderedStructures.Geometric;
 import orderedStructures.Progression;
 
@@ -13,6 +14,9 @@ public class ProgressionTester2 {
 
 		p = new Geometric(3, 2); 
 		printSumOfTerms(p, 5); 
+		
+		p = new Fibonacci();
+		printSumOfTerms(p, 7);
 	} 
 
 	/** Prints the sum of the first terms in a 
