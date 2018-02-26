@@ -26,5 +26,9 @@ public class Fibonacci extends Progression {
 		prev = 0; 
 		return value; 
 	}
+	@Override
+	public String toString() {
+		return "Geom(" + getFirstValue() + ", " + (int) prev + ")";	
+	}
 
 }

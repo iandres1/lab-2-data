@@ -15,4 +15,11 @@ public class Geometric extends Progression {
 		return current;
 	}
 
+	@Override
+	public String toString() {
+		
+		return "Geom(" + getFirstValue() + ", " + (int) commonFactor + ")";	
+	}
+	
+	
 }

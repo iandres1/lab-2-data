@@ -14,4 +14,9 @@ public class Arithmetic extends Progression {
 		return current;
 	}
 
+	@Override
+	public String toString() {
+		return "Arith(" + getFirstValue() + ", " + (int) commonDifference + ")";
+	}
+
 }

@@ -40,5 +40,10 @@ public abstract class Progression implements OrderedNumberStructure {
 		return value; 
 	}
 	
+	public int getFirstValue(){
+		return (int) this.first;
+	}
+	
+	public abstract String toString();
 	public abstract double nextValue(); 
 }
